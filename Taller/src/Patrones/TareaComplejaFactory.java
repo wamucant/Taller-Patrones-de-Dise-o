@@ -1,4 +1,4 @@
-package PatronFactory;
+package Patrones;
 
 class TareaComplejaFactory implements TareaFactory {
     @Override

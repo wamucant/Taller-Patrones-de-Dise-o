@@ -1,4 +1,4 @@
-package PatronFactory;
+package Patrones;
 class TareaSimpleFactory implements TareaFactory {
     @Override
     public Tarea crearTarea(int id, String titulo, String descripcion, String fechaVencimiento, int prioridad) {
