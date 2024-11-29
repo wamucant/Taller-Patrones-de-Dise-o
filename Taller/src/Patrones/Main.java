@@ -1,4 +1,5 @@
-package com.Patrones;
+package Patrones;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,7 +7,7 @@ public class Main {
         TareaFactory factory = new TareaSimpleFactory();
         Tarea tarea1 = factory.crearTarea(1, "Comprar materiales", "Ir al mercado", "28/11/2024", 3);
 
-        TareaManager tareaManager = new TareaManager();
+        TareaManagerFacade tareaManager = new TareaManagerFacade();
         tareaManager.crearTarea(factory, 2, "Planear viaje", "Reservar vuelos", "28/11/2024", 1);
 
         // Observer

@@ -1,5 +1,10 @@
-package com.Patrones;
+package Patrones;
+import java.util.List;
 
-public class VistaTablero {
-
+class VistaTablero implements VistaStrategy {
+    @Override
+    public void mostrarTareas(List<Tarea> tareas) {
+        System.out.println("Mostrando tareas en formato tablero:");
+        tareas.forEach(System.out::println); // Simplificado para ilustrar
+    }
 }

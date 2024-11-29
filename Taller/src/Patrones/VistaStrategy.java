@@ -1,5 +1,6 @@
-package com.Patrones;
+package Patrones;
+import java.util.List;
 
-public interface VistaStrategy {
-
+interface VistaStrategy {
+    void mostrarTareas(List<Tarea> tareas);
 }

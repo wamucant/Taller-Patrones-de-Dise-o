@@ -1,5 +1,18 @@
-package com.Patrones;
+package Patrones;
+import java.util.List;
 
-public class Visualizador {
+class Visualizador {
+    private VistaStrategy estrategia;
 
+    public void cambiarVista(VistaStrategy nuevaEstrategia) {
+        this.estrategia = nuevaEstrategia;
+    }
+
+    public void mostrarTareas(List<Tarea> tareas) {
+        if (estrategia != null) {
+            estrategia.mostrarTareas(tareas);
+        } else {
+            System.out.println("No hay estrategia definida.");
+        }
+    }
 }
