@@ -1,3 +1,4 @@
+package PatronFactory;
 class Tarea {
     private int id;
     private String titulo;
